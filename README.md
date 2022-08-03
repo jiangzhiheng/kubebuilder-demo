@@ -10,4 +10,9 @@ kubebuilder init --domain jzh.tech
 kubebuilder create api --group ingress --version v1beta1 --kind App
 ```
 
+### 3. 创建webhook
+```shell
+kubebuilder create webhook --group ingress --version v1beta1 --kind App --defaulting  --programmatic-validation --conversion
+```
+
 ## Controller-runtime 介绍
